@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_rotas_nomeadas/pages/inicial/inicial_page_1.dart';
 import 'package:get_rotas_nomeadas/pages/home_page.dart';
 
 void main() {
@@ -25,9 +26,12 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: "/",
           page: () => const HomePage(),
-        )
+        ),
+        GetPage(
+          name: "/inicial/page1",
+          page: () => const InicialPage1(),
+        ),
       ],
-      home: const HomePage(),
     );
   }
 }

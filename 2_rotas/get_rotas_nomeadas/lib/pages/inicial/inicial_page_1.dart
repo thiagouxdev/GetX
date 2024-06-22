@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class InicialPage1 extends StatelessWidget {
+  const InicialPage1({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Page'),
+        title: const Text("Page 1"),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(onPressed: () {}, child: const Text("Page 1"))
+            ElevatedButton(onPressed: () {}, child: const Text("Label"))
           ],
         ),
       ),
