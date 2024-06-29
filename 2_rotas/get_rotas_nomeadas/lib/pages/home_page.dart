@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,7 +14,24 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(onPressed: () {}, child: const Text("Page 1"))
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed("/inicial/page1");
+              },
+              child: const Text("Inicial Page"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed("Pagina que não existe teste");
+              },
+              child: const Text("404"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed("/envio_paramentros/envio_parametros_home_page");
+              },
+              child: const Text("Envio paramentros"),
+            ),
           ],
         ),
       ),
