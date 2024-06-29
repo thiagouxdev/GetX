@@ -33,6 +33,12 @@ class MyApp extends StatelessWidget {
         page: () => const RotaNaoEncontrada(),
       ),
       initialRoute: "/home",
+
+      // Utilizado para salvar as rotas, bem util para analitics onde precisamos saber as paginas e fluxo mais acessados
+      routingCallback: (Routing? routing) {
+        debugPrint(routing?.current);
+        debugPrint(routing?.previous);
+      },
       getPages: [
         GetPage(
           name: "/home",
