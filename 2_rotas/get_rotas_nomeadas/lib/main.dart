@@ -7,7 +7,6 @@ import 'package:get_rotas_nomeadas/pages/envio_paramentros/query_param_page.dart
 import 'package:get_rotas_nomeadas/pages/inicial/inicial_page_1.dart';
 import 'package:get_rotas_nomeadas/pages/home_page.dart';
 import 'package:get_rotas_nomeadas/pages/rota_nao_encontrada/rota_nao_encontrada.dart';
-
 import 'pages/envio_paramentros/envio_parametros_home_page copy.dart';
 
 void main() {
