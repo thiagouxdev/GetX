@@ -6,6 +6,7 @@ import 'package:get_rotas_nomeadas/pages/envio_paramentros/path_param_page.dart'
 import 'package:get_rotas_nomeadas/pages/envio_paramentros/query_param_page.dart';
 import 'package:get_rotas_nomeadas/pages/inicial/inicial_page_1.dart';
 import 'package:get_rotas_nomeadas/pages/home_page.dart';
+import 'package:get_rotas_nomeadas/pages/middlewares/route_middelewares.dart';
 import 'package:get_rotas_nomeadas/pages/rota_nao_encontrada/rota_nao_encontrada.dart';
 import 'pages/envio_paramentros/envio_parametros_home_page.dart';
 
@@ -15,6 +16,8 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
+  get middlewares => null;
 
   @override
   Widget build(BuildContext context) {
@@ -70,9 +73,11 @@ class MyApp extends StatelessWidget {
           ],
         ),
         GetPage(
-          name: "/meddlewares",
-          page: () => const MiddlewaresHomePage(),
-        ),
+            name: "/middlewares",
+            page: () => MiddlewaresHomePage(),
+            middlewares: [
+              RouteMiddlewares(),
+            ]),
       ],
     );
   }

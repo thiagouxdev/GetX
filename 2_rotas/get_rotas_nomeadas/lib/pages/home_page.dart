@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                Get.toNamed("/meddlewares");
+                Get.toNamed("/middlewares");
               },
               child: const Text("Middlewares"),
             ),
