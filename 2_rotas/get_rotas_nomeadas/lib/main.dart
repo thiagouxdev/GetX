@@ -7,7 +7,7 @@ import 'package:get_rotas_nomeadas/pages/envio_paramentros/query_param_page.dart
 import 'package:get_rotas_nomeadas/pages/inicial/inicial_page_1.dart';
 import 'package:get_rotas_nomeadas/pages/home_page.dart';
 import 'package:get_rotas_nomeadas/pages/rota_nao_encontrada/rota_nao_encontrada.dart';
-import 'pages/envio_paramentros/envio_parametros_home_page copy.dart';
+import 'pages/envio_paramentros/envio_parametros_home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,28 +50,29 @@ class MyApp extends StatelessWidget {
           page: () => const InicialPage(),
         ),
         GetPage(
-            name: "/envio_paramentros/",
-            page: () => const EnvioParametrosHomePage(),
-            children: [
-              ///A rota para os itens abaixo são concatenadas com o item de cima. Ex: /envio_paramentros/arguments
-              GetPage(
-                name: "/arguments",
-                page: () => const ArgumentsParamPage(),
-              ),
-              GetPage(
-                ///Esse items aluno precisa ser passado para que você continui com a rota
-                name: "/pathParam/:aluno/jornadaGetX",
-                page: () => const PathParamPage(),
-              ),
-              GetPage(
-                name: "/queryParam",
-                page: () => const QueryParamPage(),
-              ),
-              GetPage(
-                name: "/meddlewares",
-                page: () => const MiddlewaresHomePage(),
-              ),
-            ]),
+          name: "/envio_paramentros/",
+          page: () => const EnvioParametrosHomePage(),
+          children: [
+            ///A rota para os itens abaixo são concatenadas com o item de cima. Ex: /envio_paramentros/arguments
+            GetPage(
+              name: "/arguments",
+              page: () => const ArgumentsParamPage(),
+            ),
+            GetPage(
+              ///Esse items aluno precisa ser passado para que você continui com a rota
+              name: "/pathParam/:aluno/jornadaGetX",
+              page: () => const PathParamPage(),
+            ),
+            GetPage(
+              name: "/queryParam",
+              page: () => const QueryParamPage(),
+            ),
+          ],
+        ),
+        GetPage(
+          name: "/meddlewares",
+          page: () => const MiddlewaresHomePage(),
+        ),
       ],
     );
   }
