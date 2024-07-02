@@ -32,6 +32,12 @@ class HomePage extends StatelessWidget {
               },
               child: const Text("Envio paramentros"),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed("/meddlewares");
+              },
+              child: const Text("Middlewares"),
+            ),
           ],
         ),
       ),
