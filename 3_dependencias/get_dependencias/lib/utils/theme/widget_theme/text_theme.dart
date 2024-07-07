@@ -15,17 +15,17 @@ class TTextTheme {
     headlineLarge: GoogleFonts.getFont(
       tFontFamily,
       fontSize: 32,
-      fontWeight: weightRegular,
+      fontWeight: weightSemiBold,
     ),
     headlineMedium: GoogleFonts.getFont(
       tFontFamily,
       fontSize: 28,
-      fontWeight: weightRegular,
+      fontWeight: weightSemiBold,
     ),
     headlineSmall: GoogleFonts.getFont(
       tFontFamily,
       fontSize: 24,
-      fontWeight: weightRegular,
+      fontWeight: weightSemiBold,
     ),
 
     //title

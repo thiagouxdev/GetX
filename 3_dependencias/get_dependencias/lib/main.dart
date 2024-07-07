@@ -18,23 +18,25 @@ class MyApp extends StatelessWidget {
 
     return Builder(
       builder: (context) {
-        return Obx(() => GetMaterialApp(
-              title: 'Dependencias',
-              debugShowCheckedModeBanner: false,
-              darkTheme: TAppTheme.darkTheme(context),
-              theme: TAppTheme.lightTheme(context),
-              themeMode: themeController.themeModeSelected.value,
-              getPages: [
-                GetPage(
-                  name: "/",
-                  page: () => const HomePage(),
-                ),
-                GetPage(
-                  name: "/basico",
-                  page: () => ThemePage(),
-                ),
-              ],
-            ));
+        return Obx(
+          () => GetMaterialApp(
+            title: 'Dependencias',
+            debugShowCheckedModeBanner: false,
+            darkTheme: TAppTheme.darkTheme(context),
+            theme: TAppTheme.lightTheme(context),
+            themeMode: themeController.themeModeSelected.value,
+            getPages: [
+              GetPage(
+                name: "/",
+                page: () => const HomePage(),
+              ),
+              GetPage(
+                name: "/basico",
+                page: () => ThemePage(),
+              ),
+            ],
+          ),
+        );
       },
     );
   }

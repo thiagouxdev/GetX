@@ -34,9 +34,9 @@ class ThemePage extends StatelessWidget {
                 Obx(() => RadioListTile<ThemeMode>(
                       controlAffinity: ListTileControlAffinity.trailing,
                       secondary: const Icon(Icons.light_mode_outlined),
-                      value: ThemeMode.light,
                       title: const Text("Modo Claro"),
                       groupValue: themeController.themeModeSelected.value,
+                      value: ThemeMode.light,
                       onChanged: (value) {
                         themeController.alterarThemeData(value!);
                       },
@@ -44,9 +44,9 @@ class ThemePage extends StatelessWidget {
                 Obx(() => RadioListTile<ThemeMode>(
                       controlAffinity: ListTileControlAffinity.trailing,
                       secondary: const Icon(Icons.dark_mode_outlined),
-                      value: ThemeMode.dark,
                       title: const Text("Modo Escuro"),
                       groupValue: themeController.themeModeSelected.value,
+                      value: ThemeMode.dark,
                       onChanged: (value) {
                         themeController.alterarThemeData(value!);
                       },
@@ -55,7 +55,6 @@ class ThemePage extends StatelessWidget {
                       controlAffinity: ListTileControlAffinity.trailing,
                       secondary:
                           const Icon(Icons.stay_current_portrait_outlined),
-                      value: ThemeMode.system,
                       title: const Text("Configuração do celular"),
                       subtitle: const Padding(
                         padding: EdgeInsets.only(top: 4),
@@ -63,6 +62,7 @@ class ThemePage extends StatelessWidget {
                             "O aplicativo usará as mesmas configurações do seu celular"),
                       ),
                       groupValue: themeController.themeModeSelected.value,
+                      value: ThemeMode.system,
                       onChanged: (value) {
                         themeController.alterarThemeData(value!);
                       },
