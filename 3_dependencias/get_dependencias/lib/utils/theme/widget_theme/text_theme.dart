@@ -71,7 +71,7 @@ class TTextTheme {
     bodyLarge: GoogleFonts.getFont(
       tFontFamily,
       fontSize: 16,
-      fontWeight: weightSemiBold,
+      fontWeight: weightRegular,
       letterSpacing: 0.5,
     ),
     bodyMedium: GoogleFonts.getFont(

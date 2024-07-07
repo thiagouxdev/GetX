@@ -26,6 +26,6 @@ class TColorScheme {
     onError: Color(0xFF690005),
     surface: Color(0xFF050505),
     onSurface: Color(0xFFF0ECEB),
-    onSurfaceVariant: Color(0xFFD7C3B7),
+    onSurfaceVariant: Color(0xFFBCB6B2),
   );
 }

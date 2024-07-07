@@ -8,7 +8,7 @@ class TListTileTheme {
     return ListTileThemeData(
       textColor: colorScheme.onSurface,
       titleTextStyle:
-          textTheme.bodyLarge?.copyWith(color: colorScheme.onSurface),
+          textTheme.titleMedium?.copyWith(color: colorScheme.onSurface),
       subtitleTextStyle:
           textTheme.bodyMedium?.copyWith(color: colorScheme.onSurfaceVariant),
     );
