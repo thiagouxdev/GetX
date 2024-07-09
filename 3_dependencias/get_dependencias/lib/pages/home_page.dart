@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.surface,
         title: const Text(
-          'Home Test',
+          'Home Page',
         ),
       ),
       body: Center(
