@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_dependencias/routes/app_routes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -24,7 +25,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             FilledButton(
               onPressed: () {
-                Get.toNamed("/basico");
+                Get.toNamed(AppRoutes.basico);
               },
               child: const Text("Basico (Aparência App)"),
             )
