@@ -3,10 +3,10 @@ import 'package:get/get.dart';
 
 import 'basico_theme_controller.dart';
 
-class ThemePage extends StatelessWidget {
+class BasicoThemePage extends StatelessWidget {
   final ThemeController themeController = Get.put(ThemeController());
 
-  ThemePage({super.key});
+  BasicoThemePage({super.key});
 
   @override
   Widget build(BuildContext context) {

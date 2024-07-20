@@ -28,7 +28,13 @@ class _HomePageState extends State<HomePage> {
                 Get.toNamed(AppRoutes.basico);
               },
               child: const Text("Basico (Aparência App)"),
-            )
+            ),
+            FilledButton(
+              onPressed: () {
+                Get.toNamed(AppRoutes.metodos.root);
+              },
+              child: const Text("Metodos"),
+            ),
           ],
         ),
       ),
