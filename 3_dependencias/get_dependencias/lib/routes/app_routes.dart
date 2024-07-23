@@ -9,4 +9,5 @@ class AppRoutes {
 class MetodosRoutes {
   final String root = "/metodos";
   final String put = "/metodos/put";
+  final String lazyPut = "/metodos/lazy_put";
 }

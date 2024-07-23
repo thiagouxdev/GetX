@@ -21,6 +21,12 @@ class MetodosHomePage extends StatelessWidget {
             },
             child: const Text("Put"),
           ),
+          OutlinedButton(
+            onPressed: () {
+              Get.toNamed(AppRoutes.metodos.lazyPut);
+            },
+            child: const Text("LazyPut"),
+          ),
         ],
       )),
     );
